@@ -1,0 +1,50 @@
+REQUIREMENTS FOR OUR PROJECT
+
+WE ARE A BOOK MANAGEMENT COMPANY
+
+BOOKS
+ISBN(id of the book) , title , publication date , no. of pages , author[] , category[]
+
+AUTHORS
+ id, name, books[]
+
+PUBLICATIONS
+id, name, books[]
+
+WE HAVE TO DESIGN AND CODE AN API OVER THIS
+
+1. BOOKS
+we need an API :-
+to get all the books                
+to get specific books               
+to get a list of books based on category       
+to get a list of books based on language      
+
+2. AUTHORS
+we need an API :-
+to get all the authors                            
+to get a specifc author                           
+to get alist of authors based on books            
+
+3.PUBLICATION
+we need an API :-
+to get all the publications                       
+to get a specific publication                      
+to get a list of publication based on book        
+
+
+
+------ POST REQUEST -------
+1. ADD NEW BOOK                     
+2. ADD NEW PUBLICATION
+3. ADD NEW AUTHOR 
+
+----------- PUT ------------
+UPDATE BOOK DETAILS IF AUTHOR IS CHANGED            
+
+----------- DELETE -----------
+1. DELETE A BOOK                            
+2. DELETE AUTHOR FROM BOOK
+3. DELETE AUTHOR FORM BOOK AND RELATED BOOK FROM AUTHOR.
+
+
