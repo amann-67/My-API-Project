@@ -1,4 +1,9 @@
+require("dotenv").config();
+
+
 const express = require("express");
+const mongoose = require("mongoose");
+
 const bodyParser = require("body-parser");
 
 //DATABASE
@@ -9,6 +14,8 @@ const booky = express();
 
 booky.use(bodyParser.urlencoded({extended: true}));
 booky.use(bodyParser.json()); // added this for extra security as this converts into json format.
+
+mongoose.connect(process.env.MONGO_URL).then(() => console.log("connection established"));
 
 // ------------ GET --------------
 
